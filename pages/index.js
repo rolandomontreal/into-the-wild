@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -20,6 +21,11 @@ export default function Home() {
           <h3 className={styles.subHeading}>
             A modern wilderness travelling agency
           </h3>
+          <Link href="#">
+            <a className={styles.btn}>
+              Our tours
+            </a>
+          </Link>
         </div>
       </div>
     </div>
