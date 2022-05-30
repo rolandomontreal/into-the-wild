@@ -19,9 +19,9 @@
 
 .logoBox {
   position: absolute;
-  top: 40px;
-  left: 40px;
-  width: 32px;
+  top: 4rem;
+  left: 4rem;
+  width: 3.2rem;
 }
 
 .mainContent {
@@ -36,7 +36,7 @@
 }
 
 .mainHeading {
-  font-size: 40px;
+  font-size: 4rem;
   font-weight: 400;
   animation-name: moveInLeft;
   animation-duration: 1.5s;
@@ -46,8 +46,8 @@
 }
 
 .subHeading {
-  font-size: 24px;
-  letter-spacing: 6px;
+  font-size: 2.4rem;
+  letter-spacing: .6rem;
   color: rgba(255, 255, 255, .7);
   animation-name: moveInRight;
   animation-duration: 1.5s;
@@ -59,11 +59,11 @@
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-100px);
+    transform: translateX(-10rem);
   }
 
   70% {
-    transform: translateX(10px);
+    transform: translateX(1rem);
   }
 
   100% {
@@ -75,11 +75,11 @@
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translateX(100px);
+    transform: translateX(10rem);
   }
 
   70% {
-    transform: translateX(-10px);
+    transform: translateX(-1rem);
   }
 
   100% {
@@ -91,11 +91,11 @@
 @keyframes moveInBottom {
   0% {
     opacity: 0;
-    transform: translateY(100px);
+    transform: translateY(10rem);
   }
 
   70% {
-    transform: translateY(-10px);
+    transform: translateY(-1rem);
   }
 
   100% {
@@ -106,33 +106,32 @@
 
 .btn {
   transition: all .2s;
-  position: relative;
   animation-name: moveInBottom;
   animation-duration: 1.5s;
   animation-delay: 1s;
-  opacity: 0;
-  animation-fill-mode: forwards;
+  position: relative;
+  animation-fill-mode: backwards;
 }
 
 .btn:link, .btn:visited {
   text-decoration: none;
   text-transform: uppercase;
-  margin-top: 24px;
-  padding: 10px 100px;
-  border-radius: 50px;
+  margin-top: 2.4rem;
+  padding: 1rem 10rem;
+  border-radius: 5rem;
   background-color: #EBECF3;
   color: #0E2658;
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 .btn:hover {
-  transform: translateY(-5px);
+  transform: translateY(-.5rem);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
 }
 
 .btn:active {
-  transform: translateY(-2px);
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+  transform: translateY(-.1rem);
+  box-shadow: 0rem .2rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 .btn::after {
@@ -143,7 +142,7 @@
   background-color: rgb(235, 236, 243);
   z-index: -1;
   position: absolute;
-  border-radius: 50px;
+  border-radius: 5rem;
   top: 0;
   left: 0;
   transition: all .2s;
